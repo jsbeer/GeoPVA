@@ -9,18 +9,15 @@ GeoPVA can do the following:
 
 This program is a compilation of python scripts developed for my Capstone computer science project at John Jay CUNY.
 A link to our original report is here:
-
 https://drive.google.com/file/d/0B3Q_qzZ-NhkMQUlCTTJRaFBncFJuWHNGY3ZIY3NyeXZMME5n/view
 
 For this program to work you will need the following python scripts installed:
-
 Pandas            
 ipaddress
 netaddr
 IP2location.py is needed and provided. 
 
 Please note:
-
 - This program is only as accurate as the database being used. 
   As this is using an older free version from IP2location, I would not expect accurate results. 
 - This program works for IP4 addresses only.
