@@ -1,6 +1,3 @@
-# Fixed the functions so search works
-
-
 # GeoPVA v1.0
 # Geographic Port Vulnerability Analysis
 # jbeer@protonmail.com
@@ -44,14 +41,14 @@ def FirstWelcome():
     print("This version includes:")
     print("")
     print("- Searching the provided database of Geocodes by Country, City, State, or Zip Code ")
-    print("- Creating Whitelist files that can then be used for port scanning on Nmap")
+    print("- Creating Whitelist files that can than be used for port scanning on Nmap")
     print("- Searching Nmap log files for open ports and obtaining IP4 Geocoding information")
     print("")
     print("TIPS")
     print("- Created files can be large: Try smaller areas first(zip code)")
     print("- Everything is set to lower case for ease of use")
     print("- Type 'm' at anytime to return to the Main Menu")
-    print("- About section contains further information")
+    print("- About section contains farther information")
     print("- Have fun, and be nice \n\n\n\n")
     
 def Welcome():
@@ -176,8 +173,8 @@ def Instructions():     #i
     print("2. Create a CIDR/whitelist file for nmap scanning ")
     print("3. Use the created whitelist file on Nmap to check if the IP addresses are active")
     print("4. Use the created whitelist file on Nmap to Port Scan")
-    print("5. Convert your Nmap scan of active IP addresses to geographic equivilent ‘n’")
-    print("6. Convert your Nmap port to a geographic equivilent ‘n’")
+    print("5. Convert you're Nmap scan of active IP addresses to geographic equivilent ‘n’")
+    print("6. Convert you're Nmap port to a geographic equivilent ‘n’")
     print("7. Run ‘Get Percentages’ to see the percentage of vulnerability by area and create GIS importable files ‘y’")
     print("\n\n\n\n")
 
@@ -194,7 +191,7 @@ def Search(counter,fileoutput,A,B,Text1,Text2):
     def Overall(area):                  #General Function for one Variable: Country or State
         area = area.lower()
         counter = 0
-        fileoutput = input("Please name your file:     ")
+        fileoutput = input("Please name you're file:     ")
         if fileoutput == "m":
             Welcome()
         
@@ -215,7 +212,7 @@ def Search(counter,fileoutput,A,B,Text1,Text2):
         counter = 0
         area = area.lower()
         area2 = area2.lower()
-        fileoutput = input("\nPlease name your file:     ")
+        fileoutput = input("\nPlease name you're file:     ")
         if fileoutput == "m":
             Welcome()
         with open('IP2LOCATION-LITE-DB11.CSV','r') as f:
@@ -245,7 +242,7 @@ def Search(counter,fileoutput,A,B,Text1,Text2):
         if area == "m":
             Welcome()
 
-        fileoutput = input("\nPlease name your file:     ")
+        fileoutput = input("\nPlease name you're file:     ")
         if fileoutput == "m":
             Welcome()
 
@@ -482,7 +479,7 @@ def ipScanConvert():
 
     while True:
         
-        fileIN = input("What is the name of your file:   ")
+        fileIN = input("What is the name of you're file:   ")
         str(fileIN)
         
         if fileIN == "m":
@@ -513,7 +510,7 @@ def ipScanConvert():
 def GetPercent():    
 
     while True:        
-        FileIP = input("First Give me your scan of all active IP's:  ")
+        FileIP = input("First Give me you're scan of all active IP's:  ")
         if FileIP == "m":
             Welcome()
         if os.path.exists(FileIP):
@@ -525,7 +522,7 @@ def GetPercent():
             True
 
     while True:
-        FileHits = input("Now Give me your file of Nmap Port Hits:   ")
+        FileHits = input("Now Give me you're file of Nmap Port Hits:   ")
         if FileHits == "m":
             Welcome()
         if os.path.exists(FileHits):
@@ -536,7 +533,7 @@ def GetPercent():
             print("\n")
             True
 
-    FinalFile = input("Please name your final output file(No extension please):   ")
+    FinalFile = input("Please name you're final output file(No extension please):   ")
     if FinalFile == "m":
         Welcome()
     
