@@ -24,4 +24,3 @@ Please note:
 
 Feel free to contact me with comments, questions or job opportunities.
 
-Jonathan Strand-Beer
